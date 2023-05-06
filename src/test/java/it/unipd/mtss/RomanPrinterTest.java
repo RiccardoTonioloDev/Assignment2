@@ -88,4 +88,17 @@ public class RomanPrinterTest {
                 "|_____/ \n"));
 
     }
+
+    @Test
+    public void testPrintM() throws NumberUnderZeroException, NumberAEFiveThousand {
+        int arabic_number = 1000;
+        String ascii_art_for_I = printer.print(arabic_number);
+        assertEquals(ascii_art_for_I, new String(" __  __ \n" +
+                "|  \\/  |\n" +
+                "| \\  / |\n" +
+                "| |\\/| |\n" +
+                "| |  | |\n" +
+                "|_|  |_|\n"));
+
+    }
 }
