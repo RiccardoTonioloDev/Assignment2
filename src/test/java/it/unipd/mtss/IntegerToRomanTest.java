@@ -17,4 +17,9 @@ public class IntegerToRomanTest {
         converter.convert(arabic_number);
     }
 
+    @Test(expected = NumberAEFiveThousand.class)
+    public void testNumberAbove4999() throws NumberUnderZeroException, NumberAEFiveThousand {
+        int arabic_number = 5000;
+        converter.convert(arabic_number);
+    }
 }
