@@ -1,0 +1,2 @@
+[![Checkstyle workflow](https://github.com/RiccardoTonioloDev/Assignment2/actions/workflows/checkstyle.yml/badge.svg)]
+[![Coverage Status](https://coveralls.io/repos/github/RiccardoTonioloDev/Assignment2/badge.svg?branch=develop)](https://coveralls.io/github/RiccardoTonioloDev/Assignment2?branch=develop)
