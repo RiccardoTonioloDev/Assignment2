@@ -108,4 +108,19 @@ public class RomanPrinterTest {
         String ascii_art_for_zero = printer.print(arabic_number);
         assertEquals(ascii_art_for_zero, new String(""));
     }
+
+    @Test
+    public void testLettersCombination1666() throws NumberUnderZeroException, NumberAEFiveThousand {
+        int arabic_number = 1666;
+        String ascii_art_for_I = printer.print(arabic_number);
+        assertEquals(ascii_art_for_I,
+                new String(" __  __ " + " _____  " + "  _____ " + " _      " + "__   __" + "__      __" + " _____ \n" +
+                        "|  \\/  |" + "|  __ \\ " + " / ____|" + "| |     " + "\\ \\ / /" + "\\ \\    / /" + "|_   _|\n"
+                        +
+                        "| \\  / |" + "| |  | |" + "| |     " + "| |     " + " \\ V / " + " \\ \\  / / " + "  | |  \n" +
+                        "| |\\/| |" + "| |  | |" + "| |     " + "| |     " + "  > <  " + "  \\ \\/ /  " + "  | |  \n" +
+                        "| |  | |" + "| |__| |" + "| |____ " + "| |____ " + " / . \\ " + "   \\  /   " + " _| |_ \n" +
+                        "|_|  |_|" + "|_____/ " + " \\_____|" + "|______|" + "/_/ \\_\\" + "    \\/    "
+                        + "|_____|\n"));
+    }
 }
