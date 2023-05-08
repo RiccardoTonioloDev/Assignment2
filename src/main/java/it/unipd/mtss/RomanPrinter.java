@@ -56,13 +56,20 @@ public class RomanPrinter {
     }
 
     public static String print(int num)
-            throws NumberUnderZeroException, NumberAEFiveThousand {
+            throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         return printAsciiArt(IntegerToRoman.convert(num));
     }
 
-    private static String printAsciiArt(String romanNumber) {
+    private static String printAsciiArt(String romanNumber) throws NonRightCharacterException {
         if (romanNumber.equals("")) {
             return "";
+        }
+        for (int c = 0; c < romanNumber.length(); c++) {
+            char currCh = romanNumber.charAt(c);
+            if (currCh != 'I' && currCh != 'V' && currCh != 'X' && currCh != 'L' && currCh != 'D' && currCh != 'C'
+                    && currCh != 'M') {
+                throw new NonRightCharacterException(currCh);
+            }
         }
         StringBuilder asciiArt = new StringBuilder();
         // Ciclo per stampare le righe
