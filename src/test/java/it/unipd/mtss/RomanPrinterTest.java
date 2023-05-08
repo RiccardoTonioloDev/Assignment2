@@ -29,8 +29,8 @@ public class RomanPrinterTest {
     @Test
     public void testPrintV() throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 5;
-        String ascii_art_for_I = printer.print(arabic_number);
-        assertEquals(ascii_art_for_I, new String("__      __\n" +
+        String ascii_art_for_V = printer.print(arabic_number);
+        assertEquals(ascii_art_for_V, new String("__      __\n" +
                 "\\ \\    / /\n" +
                 " \\ \\  / / \n" +
                 "  \\ \\/ /  \n" +
@@ -42,8 +42,8 @@ public class RomanPrinterTest {
     @Test
     public void testPrintX() throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 10;
-        String ascii_art_for_I = printer.print(arabic_number);
-        assertEquals(ascii_art_for_I, new String("__   __\n" +
+        String ascii_art_for_X = printer.print(arabic_number);
+        assertEquals(ascii_art_for_X, new String("__   __\n" +
                 "\\ \\ / /\n" +
                 " \\ V / \n" +
                 "  > <  \n" +
@@ -55,8 +55,8 @@ public class RomanPrinterTest {
     @Test
     public void testPrintL() throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 50;
-        String ascii_art_for_I = printer.print(arabic_number);
-        assertEquals(ascii_art_for_I, new String(" _      \n" +
+        String ascii_art_for_L = printer.print(arabic_number);
+        assertEquals(ascii_art_for_L, new String(" _      \n" +
                 "| |     \n" +
                 "| |     \n" +
                 "| |     \n" +
@@ -68,8 +68,8 @@ public class RomanPrinterTest {
     @Test
     public void testPrintC() throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 100;
-        String ascii_art_for_I = printer.print(arabic_number);
-        assertEquals(ascii_art_for_I, new String("  _____ \n" +
+        String ascii_art_for_C = printer.print(arabic_number);
+        assertEquals(ascii_art_for_C, new String("  _____ \n" +
                 " / ____|\n" +
                 "| |     \n" +
                 "| |     \n" +
@@ -81,8 +81,8 @@ public class RomanPrinterTest {
     @Test
     public void testPrintD() throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 500;
-        String ascii_art_for_I = printer.print(arabic_number);
-        assertEquals(ascii_art_for_I, new String(" _____  \n" +
+        String ascii_art_for_D = printer.print(arabic_number);
+        assertEquals(ascii_art_for_D, new String(" _____  \n" +
                 "|  __ \\ \n" +
                 "| |  | |\n" +
                 "| |  | |\n" +
@@ -94,8 +94,8 @@ public class RomanPrinterTest {
     @Test
     public void testPrintM() throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 1000;
-        String ascii_art_for_I = printer.print(arabic_number);
-        assertEquals(ascii_art_for_I, new String(" __  __ \n" +
+        String ascii_art_for_M = printer.print(arabic_number);
+        assertEquals(ascii_art_for_M, new String(" __  __ \n" +
                 "|  \\/  |\n" +
                 "| \\  / |\n" +
                 "| |\\/| |\n" +
@@ -116,8 +116,8 @@ public class RomanPrinterTest {
     public void testLettersCombination1666()
             throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 1666;
-        String ascii_art_for_I = printer.print(arabic_number);
-        assertEquals(ascii_art_for_I,
+        String ascii_art_for_1666 = printer.print(arabic_number);
+        assertEquals(ascii_art_for_1666,
                 new String(" __  __ " + " _____  " + "  _____ " + " _      " + "__   __" + "__      __" + " _____ \n" +
                         "|  \\/  |" + "|  __ \\ " + " / ____|" + "| |     " + "\\ \\ / /" + "\\ \\    / /" + "|_   _|\n"
                         +
@@ -132,8 +132,8 @@ public class RomanPrinterTest {
     public void testLettersCombination511()
             throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 511;
-        String ascii_art_for_I = printer.print(arabic_number);
-        assertEquals(ascii_art_for_I,
+        String ascii_art_for_511 = printer.print(arabic_number);
+        assertEquals(ascii_art_for_511,
                 new String(" _____  " + "__   __" + " _____ \n" +
                         "|  __ \\ " + "\\ \\ / /" + "|_   _|\n"
                         + "| |  | |" + " \\ V / " + "  | |  \n" +
@@ -147,8 +147,8 @@ public class RomanPrinterTest {
     public void testLettersCombination56()
             throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 65;
-        String ascii_art_for_I = printer.print(arabic_number);
-        assertEquals(ascii_art_for_I,
+        String ascii_art_for_65 = printer.print(arabic_number);
+        assertEquals(ascii_art_for_65,
                 new String(" _      " + "__   __" + "__      __\n" +
                         "| |     " + "\\ \\ / /" + "\\ \\    / /\n" +
                         "| |     " + " \\ V / " + " \\ \\  / / \n" +

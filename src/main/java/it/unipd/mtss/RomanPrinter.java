@@ -4,8 +4,6 @@
 ////////////////////////////////////////////////////////////////////
 package it.unipd.mtss;
 
-import static org.mockito.ArgumentMatchers.contains;
-
 import java.util.Arrays;
 import java.util.HashMap;
 
