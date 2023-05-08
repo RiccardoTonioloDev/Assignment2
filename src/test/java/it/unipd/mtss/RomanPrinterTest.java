@@ -128,6 +128,35 @@ public class RomanPrinterTest {
                         + "|_____|\n"));
     }
 
+    @Test
+    public void testLettersCombination511()
+            throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
+        int arabic_number = 511;
+        String ascii_art_for_I = printer.print(arabic_number);
+        assertEquals(ascii_art_for_I,
+                new String(" _____  " + "__   __" + " _____ \n" +
+                        "|  __ \\ " + "\\ \\ / /" + "|_   _|\n"
+                        + "| |  | |" + " \\ V / " + "  | |  \n" +
+                        "| |  | |" + "  > <  " + "  | |  \n" +
+                        "| |__| |" + " / . \\ " + " _| |_ \n" +
+                        "|_____/ " + "/_/ \\_\\"
+                        + "|_____|\n"));
+    }
+
+    @Test
+    public void testLettersCombination56()
+            throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
+        int arabic_number = 65;
+        String ascii_art_for_I = printer.print(arabic_number);
+        assertEquals(ascii_art_for_I,
+                new String(" _      " + "__   __" + "__      __\n" +
+                        "| |     " + "\\ \\ / /" + "\\ \\    / /\n" +
+                        "| |     " + " \\ V / " + " \\ \\  / / \n" +
+                        "| |     " + "  > <  " + "  \\ \\/ /  \n" +
+                        "| |____ " + " / . \\ " + "   \\  /   \n" +
+                        "|______|" + "/_/ \\_\\" + "    \\/    \n"));
+    }
+
     @Test(expected = NullPointerException.class)
     public void testNullInsertion() throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         try (MockedStatic<IntegerToRoman> utilities = Mockito.mockStatic(IntegerToRoman.class)) {
