@@ -4,6 +4,9 @@
 ////////////////////////////////////////////////////////////////////
 package it.unipd.mtss;
 
+import static org.mockito.ArgumentMatchers.contains;
+
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class RomanPrinter {
@@ -56,18 +59,19 @@ public class RomanPrinter {
     }
 
     public static String print(int num)
-            throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
+            throws NumberUnderZeroException, NumberAEFiveThousand,
+            NonRightCharacterException {
         return printAsciiArt(IntegerToRoman.convert(num));
     }
 
-    private static String printAsciiArt(String romanNumber) throws NonRightCharacterException {
+    private static String printAsciiArt(String romanNumber)
+            throws NonRightCharacterException {
         if (romanNumber.equals("")) {
             return "";
         }
         for (int c = 0; c < romanNumber.length(); c++) {
             char currCh = romanNumber.charAt(c);
-            if (currCh != 'I' && currCh != 'V' && currCh != 'X' && currCh != 'L' && currCh != 'D' && currCh != 'C'
-                    && currCh != 'M') {
+            if (!(Arrays.asList('I', 'V', 'X', 'L', 'C', 'D', 'M').contains(currCh))) {
                 throw new NonRightCharacterException(currCh);
             }
         }
