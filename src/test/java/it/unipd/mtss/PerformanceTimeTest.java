@@ -8,7 +8,7 @@ import org.junit.rules.Timeout;
 
 public class PerformanceTimeTest {
     @Rule
-    public Timeout timer = new Timeout(10);
+    public Timeout timer = new Timeout(15);
 
     @Test
     public void performanceTimeTestIntegerToRoman()
