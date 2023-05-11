@@ -15,7 +15,8 @@ public class PerformanceTimeTest {
             throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 1666;
         String roman_number = IntegerToRoman.convert(arabic_number);
-        assertEquals("MDCLXVI", roman_number);
+        String expected = "MDCLXVI";
+        assertEquals(expected, roman_number);
     }
 
     @Test()
