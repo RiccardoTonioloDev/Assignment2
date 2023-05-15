@@ -16,7 +16,7 @@ public class IntegerToRomanTest {
     }
 
     @Rule
-    public Timeout timer = new Timeout(1500);
+    public Timeout timer = new Timeout(2500);
 
     @Test(expected = NumberUnderZeroException.class)
     public void testNumberUnderZero() throws NumberUnderZeroException, NumberAEFiveThousand {

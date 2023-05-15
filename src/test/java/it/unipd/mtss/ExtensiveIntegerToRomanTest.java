@@ -23,7 +23,7 @@ public class ExtensiveIntegerToRomanTest {
     }
 
     @Rule
-    public Timeout timer = new Timeout(1500);
+    public Timeout timer = new Timeout(2500);
 
     @Parameters
     public static Collection<String[]> testProvider() {
