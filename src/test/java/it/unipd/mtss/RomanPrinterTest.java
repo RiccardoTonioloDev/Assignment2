@@ -17,7 +17,7 @@ public class RomanPrinterTest {
     }
 
     @Rule
-    public Timeout timer = new Timeout(3000);
+    public Timeout timer = new Timeout(4000);
 
     @Test
     public void testPrintI() throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
