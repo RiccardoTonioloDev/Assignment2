@@ -3,7 +3,9 @@ package it.unipd.mtss;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.BeforeClass;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.Timeout;
 
 public class IntegerToRomanTest {
     static IntegerToRoman converter = null;
@@ -12,6 +14,9 @@ public class IntegerToRomanTest {
     public static void initializeConverter() {
         converter = new IntegerToRoman();
     }
+
+    @Rule
+    public Timeout timer = new Timeout(1500);
 
     @Test(expected = NumberUnderZeroException.class)
     public void testNumberUnderZero() throws NumberUnderZeroException, NumberAEFiveThousand {

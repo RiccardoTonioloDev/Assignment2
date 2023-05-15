@@ -5,7 +5,9 @@ import static org.junit.Assert.assertEquals;
 import java.util.Arrays;
 import java.util.Collection;
 
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.Timeout;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
@@ -19,6 +21,9 @@ public class ExtensiveIntegerToRomanTest {
         this.expectedOutput = expectedOutput;
         this.input = Integer.parseInt(input);
     }
+
+    @Rule
+    public Timeout timer = new Timeout(1500);
 
     @Parameters
     public static Collection<String[]> testProvider() {

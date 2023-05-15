@@ -2,7 +2,9 @@ package it.unipd.mtss;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.BeforeClass;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.Timeout;
 import org.mockito.MockedStatic;
 import org.mockito.Mockito;
 
@@ -13,6 +15,9 @@ public class RomanPrinterTest {
     public static void initializePrinter() {
         printer = new RomanPrinter();
     }
+
+    @Rule
+    public Timeout timer = new Timeout(1500);
 
     @Test
     public void testPrintI() throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
