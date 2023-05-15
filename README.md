@@ -1,5 +1,5 @@
 ![Checkstyle workflow](https://github.com/RiccardoTonioloDev/Assignment2/actions/workflows/checkstyle.yml/badge.svg)
-[![Coverage Status](https://coveralls.io/repos/github/RiccardoTonioloDev/Assignment2/badge.svg?branch=develop)](https://coveralls.io/github/RiccardoTonioloDev/Assignment2?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/RiccardoTonioloDev/Assignment2/badge.svg?branch=main)](https://coveralls.io/github/RiccardoTonioloDev/Assignment2?branch=main)
 
 <!-- ciMatrixStart -->
 |    | [Ubuntu](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu2004-Readme.md) | [Windows](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2022-Readme.md) | [macOS](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-11-Readme.md) |
